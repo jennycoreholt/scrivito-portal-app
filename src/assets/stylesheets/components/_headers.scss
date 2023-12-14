@@ -1,0 +1,18 @@
+/* Headers
+====================================================== */
+@use '../abstracts' as *;
+
+/* Page Header
+====================================================== */
+.main-page-header {
+  h1,
+  h2,
+  h3,
+  p {
+    hyphens: none;
+    word-wrap: normal;
+  }
+  * {
+    margin-bottom: 1.6rem;
+  }
+}
