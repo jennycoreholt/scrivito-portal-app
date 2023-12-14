@@ -1,0 +1,17 @@
+/* Global styles
+================================================== */
+@use '../abstracts/' as *;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  color: $font-color;
+  font-family: $brand-font-medium;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}

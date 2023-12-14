@@ -1,0 +1,10 @@
+/* Buttons
+====================================================== */
+@use '../abstracts' as *;
+
+button,
+.btn {
+  border-radius: $border-radius-lg;
+  font-family: $brand-font-semi-bold;
+  padding: .625rem 1rem;
+}

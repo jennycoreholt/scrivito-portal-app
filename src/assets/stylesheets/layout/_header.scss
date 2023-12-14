@@ -1,0 +1,14 @@
+/* Navigation
+================================================== */
+nav {
+  background-color: transparent;
+  .navbar-brand {
+    img {
+      height: 70px;
+      width: auto;
+    }
+  }
+  .navbar-collapse {
+    justify-content: space-between;
+  }
+}
