@@ -1,14 +1,127 @@
 /* Navigation
 ================================================== */
+@use '../abstracts/' as *;
+
+nav.custom-navbar-bkgrd-color {
+  background-color: $brand-white;
+  color: $font-color;
+}
+
 nav {
   background-color: transparent;
+  font-family: $brand-font-bold;
+  color: $brand-white;
   .navbar-brand {
     img {
-      height: 70px;
+      height: 60px;
       width: auto;
+    }
+  }
+  .navbar-toggler.active {
+    .line-1 {
+      transform: rotate(135deg);
+      margin-top: 7px;
+      margin-left: -2px;
+    }
+    .line-2 {
+      transform: rotate(45deg);
+      margin-top: -2px;
+      margin-left: -2px;
+    }
+  }
+  .navbar-toggler {
+    border: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    &:focus,
+    &:focus-visible {
+      box-shadow: none;
+    }
+    .wrapper-lines {
+      position: relative;
+    }
+    .lines {
+      background: $brand-white;
+      display: block;
+      height: 2px;
+      width: 15px;
+    }
+    .line-1 {
+      transform: rotate(0deg);
+      margin-top: 2px;
+      margin-left: -2px;
+    }
+    .line-2 {
+      transform: rotate(0deg);
+      margin-top: 5px;
+      margin-left: -2px;
+    }
+    .animate {
+      transition: .3s cubic-bezier(0.1, 0.02, 0.2, 1);
     }
   }
   .navbar-collapse {
     justify-content: space-between;
+    .nav-link,
+    .nav-link.active {
+      color: $brand-white;
+      &:active,
+      &:hover,
+      &:focus {
+        color: $brand-white;
+      }
+    }
+
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown-menu {
+      border-radius: 0;
+      color: $font-color;
+      font-family: $brand-font-medium;
+      padding: 2rem;
+      right: 0;
+      li {
+        a {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+        .dropdown-item {
+          color: $font-color;
+          padding: .35rem 1.5rem;
+        }
+      }
+    }
+    form.search-form {
+      margin-bottom: 1.5rem;
+      .form-control {
+        background-color: $email-soft-blue;
+        border-radius: $border-radius-lg 0 0 $border-radius-lg;
+        border-right: 0;
+        padding: .5rem 0rem .5rem 1.5rem;
+        &:focus-visible,
+        &:focus {
+          border-right: 0;
+          border: 2px solid lighten($jr-middlegrey, 35%);
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+      button,
+      .btn {
+        background-color: $email-soft-blue;
+        border: 2px solid lighten($jr-middlegrey, 35%);
+        border-left: 0;
+        border-radius: 0 $border-radius-lg $border-radius-lg 0;
+        &:active,
+        &:hover,
+        &:focus {
+          background-color: $email-soft-blue;
+          border: 2px solid lighten($jr-middlegrey, 35%);
+          border-left: 0;
+        }
+      }
+    }
   }
 }

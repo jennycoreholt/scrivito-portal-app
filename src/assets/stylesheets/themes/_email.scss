@@ -1,5 +1,30 @@
 /* Theme email
 ================================================== */
+@use '../abstracts/' as *;
+
 .theme-email {
-  // INSERT SPECIFIC STYLES FOR EMAIL PRODUCT
+  header {
+    background-color: $email-blue;
+    form.search-form {
+      .form-control {
+        border-right: 0;
+        &:focus,
+        &:focus-visible {
+          border-right: 0;
+        }
+      }
+    }
+  }
+  form {
+    .form-control{
+      &:focus,
+      &:focus-visible {
+        border-bottom: 2px solid $email-blue;
+        border-left: 2px solid $email-blue;
+        border-right: 0;
+        border-top: 2px solid $email-blue;
+        box-shadow: 0 0 0.15rem rgba(255, 255, 255, 1);
+      }
+    }
+   }
 }

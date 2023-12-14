@@ -1,0 +1,9 @@
+/* Forms
+====================================================== */
+@use '../abstracts/' as *;
+
+form {
+  .form-control {
+    border: 2px solid lighten($jr-middlegrey, 35%);
+  }
+}
