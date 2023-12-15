@@ -25,9 +25,10 @@
       }
     }
   }
-  .main-page-header {
+  .page-header,
+  .page-header-with-img {
     color: $brand-white;
-    padding-top: 3rem;
+    margin-bottom: .3rem;
   }
   .btn.btn-primary {
     background-color: $email-blue;

@@ -1,3 +1,10 @@
+
+/* Vendors
+================================================== */
+@import 'vendors/bs5/bootstrap';
+@import 'vendors/bootstrap_icons';
+@import 'vendors/scrivito_extensions';
+
 /* Abstracts
 ================================================== */
 @import 'abstracts/colors';
@@ -17,6 +24,7 @@
 @import 'components/forms';
 @import 'components/headers';
 @import 'components/navigation';
+@import 'components/boxes';
 
 /* Themes
 ================================================== */
@@ -24,12 +32,6 @@
 @import 'themes/crm';
 @import 'themes/email';
 @import 'themes/jr';
-
-/* Vendors
-================================================== */
-@import 'vendors/bs5/bootstrap';
-@import 'vendors/bootstrap_icons';
-@import 'vendors/scrivito_extensions';
 
 /* Utilities
 ================================================== */

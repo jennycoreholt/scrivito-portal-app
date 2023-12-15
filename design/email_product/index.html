@@ -18,24 +18,275 @@
   </head>
   <body class="theme-email">
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
+    <header>
+      <!----------------- navigation ------------------------------>
+      <nav class="navbar navbar-expand-lg"><!-- // NOTE: for background white navigation add class 'custom-navbar-bkgrd-color'-->
+        <a class="navbar-brand" href="#">
+          <img src="../images/dartagnan_logo_placeholder.png" alt="dartagnan logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#theme-email-nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="wrapper-lines">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="lines line-1 animate"></span>
+            <span class="lines line-2 animate"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="theme-email-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="language-switch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="language-switch">
+                <li><a class="dropdown-item" href="#">Français</a></li>
+                <li><a class="dropdown-item" href="#">Polski</a></li>
+                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-search" aria-hidden="true"></i>ICON<!-- NEED FONT AWESOME-->
+                <span class="sr-only">Search</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profile">
+                <li>
+                  <form class="d-flex search-form">
+                    <input class="form-control" type="search" placeholder="Looking for..." aria-label="Search">
+                    <button class="btn" type="submit"><span class="sr-only">Search</span></button>
+                  </form>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                    Search Item Sugguestion 1
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                    Search Item Sugguestion 2
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                    Search Item Sugguestion 3
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-user" aria-hidden="true"></i>ICON<!-- NEED FONT AWESOME-->
+                <span class="sr-only">User Profile</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profile">
+                <li><a class="dropdown-item" href="#">Profile item 1</a></li>
+                <li><a class="dropdown-item" href="#">Profile item 2</a></li>
+                <li><a class="dropdown-item" href="#">Profile item 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!----------------------- **END** navigation ---------------->
+    </header>
 
-          <!------------------ Headings / Text ------------------->
-          <h1>H1 Heading</h1>
-          <h2>H2 Heading</h2>
-          <h3>H3 Heading</h3>
-          <h4>H4 Heading</h4>
-          <h5>H5 Heading</h5>
-          <h6>H6 Heading</h6>
-          <p>I am paragraph text</p>
-          <a href="#">I am an example of a link</a>
-          <!--------------- **END** Headings / Text -------------->
+    <header>
+      <!-------------------- priniciple header widget -------------->
+      <div class="page-header-with-img">
 
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-md-5 col-lg-6 order-md-last">
+              <div class="box box-with-img">
+                <img class="img-fluid" src="../images/dummy_header_img.png" alt="placeholder header image"/>
+              </div>
+            </div>
+
+            <div class="col-md-7 col-lg-6 order-md-first">
+              <div class="box">
+                <div class="d-flex h-100 justify-content-end flex-column">
+                  <div class="text-center text-md-start">
+                    <h1>
+                      The best email solution for your business
+                    </h1>
+                    <p>
+                      Introducing Dartagnan, the email builder that lets your marketing teams create innovative, fully compatible email campaigns in just a few clicks.
+                    </p>
+
+                    <!-- white space -->
+                    <div class="md-white-space"></div>
+                    <!-- **END** white space -->
+
+                    <a href="#" class="btn custom-btn-lg btn-secondary">
+                      Talk to an Expert
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div><!-- **END** container-fluid -->
+      <!-------------------- **END** priniciple header widget -------------->
+    </header>
+
+    <header>
+      <!-------------------- simple header block widget -------------->
+      <div class="page-header">
+        <div class="box">
+
+          <div class="text-center">
+            <h1>
+              Dartagnan for you design and content teams
+            </h1>
+            <p>
+              What if your designers and copywriters could forget about code
+              and keep their focus on content, design and UX?
+            </p>
+
+            <!-- white space -->
+            <div class="md-white-space"></div>
+            <!-- **END** white space -->
+
+            <a href="#" class="btn custom-btn-lg btn-secondary">
+              Talk to an Expert
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <!-------------------- **END** simple header block widget -------------->
+    </header>
+
+    <main>
+
+
+      <section>
+        <!-------------------- Two columns block widget -------------->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 order-md-last">
+              <div class="column-y-padding h-100">
+                <div class="box box-bkgrd-img" style="background-image: url('../images/box_bkgrd_dummy_img.jpeg')">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="column-y-padding h-100">
+                <div class="box box-warm-grey">
+                  <h2>
+                      Real-time collaboration for optimal workflow
+                  </h2>
+                  <h3 class="h5 mb-1">
+                    Pool your resources
+                  </h3>
+                  <p>
+                    Share access to campaign files to encourage teamwork and accelerate production times.
+                  </p>
+                  <h3 class="h5 mb-1">
+                    Pool your resources
+                  </h3>
+                  <p>
+                    Share access to campaign files to encourage teamwork and accelerate production times.
+                  </p>
+                  <h3 class="h5 mb-1">
+                    Pool your resources
+                  </h3>
+                  <p>
+                    Share access to campaign files to encourage teamwork and accelerate production times.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------- **END** Two columns block widget ----------->
+
+        <!-------------------- Two columns block reversed widget -------------->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="column-y-padding h-100">
+                <div class="box box-bkgrd-img" style="background-image: url('../images/box_bkgrd_dummy_img_2.jpeg')">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="column-y-padding h-100">
+                <div class="box box-warm-grey">
+                  <h2>
+                      Real-time collaboration for optimal workflow
+                  </h2>
+                  <h3 class="h5 mb-1">
+                    Pool your resources
+                  </h3>
+                  <p>
+                    Share access to campaign files to encourage teamwork and accelerate production times.
+                  </p>
+                  <h3 class="h5 mb-1">
+                    Pool your resources
+                  </h3>
+                  <p>
+                    Share access to campaign files to encourage teamwork and accelerate production times.
+                  </p>
+                  <h3 class="h5 mb-1">
+                    Pool your resources
+                  </h3>
+                  <p>
+                    Share access to campaign files to encourage teamwork and accelerate production times.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------- Two columns block reversed widget -------------->
+
+      </section>
+
+      <!------------------ Headings / Text ------------------->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="column-y-padding h-100">
+                <h1>H1 Heading</h1>
+                <h2>H2 Heading</h2>
+                <h3>H3 Heading</h3>
+                <h4>H4 Heading</h4>
+                <h5>H5 Heading</h5>
+                <h6>H6 Heading</h6>
+                <p>I am paragraph text</p>
+                <a href="#">I am an example of a link</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------- **END** Headings / Text -------------->
+
+    </main>
 
   </body>
 </html>
