@@ -1,5 +1,6 @@
 // Stylesheets
 // ********************************** //
+@use 'vendors';
 @use 'abstracts';
 @use 'base';
 @use 'components';
@@ -7,7 +8,7 @@
 @use 'pages';
 @use 'themes';
 @use 'utilities';
-@use 'vendors';
+
 
 /* parts imports
  ================================================== */

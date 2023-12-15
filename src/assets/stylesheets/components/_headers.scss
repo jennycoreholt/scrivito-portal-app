@@ -5,6 +5,8 @@
 /* Page Header
 ====================================================== */
 .main-page-header {
+  align-content: end;
+  display: flex;
   h1,
   h2,
   h3,
@@ -12,7 +14,10 @@
     hyphens: none;
     word-wrap: normal;
   }
-  * {
-    margin-bottom: 1.6rem;
+  img {
+    margin-bottom: 1rem;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
   }
 }
