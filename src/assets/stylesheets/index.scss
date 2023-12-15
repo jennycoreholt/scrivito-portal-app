@@ -1,14 +1,39 @@
-// Stylesheets
-// ********************************** //
-@use 'vendors';
-@use 'abstracts';
-@use 'base';
-@use 'components';
-@use 'layout';
-@use 'pages';
-@use 'themes';
-@use 'utilities';
+/* Abstracts
+================================================== */
+@import 'abstracts/colors';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
+/* Base
+================================================== */
+@import 'base/font_styles';
+@import 'base/fonts';
+@import 'base/global';
+@import 'base/reset';
+
+/* Components
+================================================== */
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/headers';
+@import 'components/navigation';
+
+/* Themes
+================================================== */
+@import 'themes/cms';
+@import 'themes/crm';
+@import 'themes/email';
+@import 'themes/jr';
+
+/* Vendors
+================================================== */
+@import 'vendors/bs5/bootstrap';
+@import 'vendors/bootstrap_icons';
+@import 'vendors/scrivito_extensions';
+
+/* Utilities
+================================================== */
+@import 'utilities/container';
 
 /* parts imports
  ================================================== */

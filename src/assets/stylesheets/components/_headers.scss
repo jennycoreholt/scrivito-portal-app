@@ -1,6 +1,5 @@
 /* Headers
 ====================================================== */
-@use '../abstracts' as *;
 
 /* Page Header
 ====================================================== */
@@ -14,10 +13,10 @@
     hyphens: none;
     word-wrap: normal;
   }
-  img {
-    margin-bottom: 1rem;
-    @include media-breakpoint-up(md) {
-      margin-bottom: 0;
-    }
-  }
+  // img {
+  //   margin-bottom: 1rem;
+  //   @include media-breakpoint-up(md) {
+  //     margin-bottom: 0;
+  //   }
+  // }
 }

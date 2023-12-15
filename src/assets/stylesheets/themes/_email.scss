@@ -1,7 +1,5 @@
 /* Theme email
 ================================================== */
-@use '../abstracts/' as *;
-
 .theme-email {
   header {
     background-color: $email-blue;
@@ -30,5 +28,13 @@
   .main-page-header {
     color: $brand-white;
     padding-top: 3rem;
+  }
+  .btn.btn-primary {
+    background-color: $email-blue;
+    color: $brand-white;
+  }
+  .btn.btn-secondary {
+    background-color: $brand-white;
+    color: $font-color;
   }
 }

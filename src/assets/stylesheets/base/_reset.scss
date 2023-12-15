@@ -1,18 +1,16 @@
 /* reset
 ====================================================== */
-@use '../vendors/bs5/bootstrap';
-@use '../abstracts' as *;
-
-.container-fluid {
+div.container-fluid {
   padding-left: $grid-layout-spacing;;
   padding-right: $grid-layout-spacing;;
 }
 
-.row {
+div.row {
   margin-left: 0;
   margin-right: 0;
 }
-[class*="col-"] {
+
+div[class*="col-"] {
   padding-left: $grid-layout-spacing;
   padding-right: $grid-layout-spacing;
 }
