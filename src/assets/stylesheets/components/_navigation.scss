@@ -14,8 +14,9 @@ nav.navbar {
   @include media-breakpoint-up(sm) {
     padding: 0rem 4rem;
   }
-  @include media-breakpoint-up(lg) {
-    padding: 0rem 6rem;
+  @include media-breakpoint-up(xl){
+    margin: auto;
+    max-width: 1400px;
   }
   .navbar-brand {
     img {

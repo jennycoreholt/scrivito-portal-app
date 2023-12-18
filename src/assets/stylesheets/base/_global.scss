@@ -38,3 +38,9 @@ body {
   display: block;
   padding: .5rem;
 }
+
+.flexbox-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

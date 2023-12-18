@@ -40,3 +40,23 @@
 @mixin file-error() {
   background: url('../images/file-error.svg') no-repeat center !important;
 }
+
+/* Aspect Ratio for images
+================================================== */
+@mixin aspect-ratio ($width, $height) {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+  //   padding-top: math.div($height, $width) * 100%; // Note: replace code below with this when it's depreciated //
+    padding-top: ($height / $width) * 100%;
+    width: 100%;
+  }
+  > .content {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+}
