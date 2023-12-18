@@ -19,8 +19,9 @@
   <body class="theme-email">
 
     <header>
-      <!----------------- navigation ------------------------------>
-      <nav class="navbar navbar-expand-lg"><!-- // NOTE: for background white navigation add class 'custom-navbar-bkgrd-color'-->
+
+       <!----------------- navigation  ------------------------------>
+       <nav class="navbar navbar-expand-lg"><!-- // NOTE: for background white navigation add class 'custom-navbar-bkgrd-color'-->
         <a class="navbar-brand" href="#">
           <img src="../images/dartagnan_logo_placeholder.png" alt="dartagnan logo"/>
         </a>
@@ -34,17 +35,18 @@
         <div class="collapse navbar-collapse" id="theme-email-nav">
           <ul class="navbar-nav navbar-left">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Features</a>
+              <a class="nav-link" aria-current="page" href="#">Features</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#">
-                Solutions
-              </a>
-              <span class="dropdown-toggle"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>V
+              <span class="d-flex align-items-center">
+                <a class="nav-link pe-0" href="#">
+                  Solutions
+                </a>
+                <span class="dropdown-toggle"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi-chevron-down"></i>
+                </span>
               </span>
-              <ul class="dropdown-menu show" aria-labelledby="solutions">
-                <li><a class="dropdown-item" href="#"><span>Solutions Overview</span></a></li>
+              <ul class="dropdown-menu" aria-labelledby="solutions">
                 <li><a class="dropdown-item" href="#"><span>Marketing Teams</span></a></li>
                 <li><a class="dropdown-item" href="#"><span>CRM Teams</a></span></li>
                 <li><a class="dropdown-item" href="#"><span>Design & Content Teams</span></a></li>
@@ -52,14 +54,15 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#">
-                Customers
-              </a>
-              <span class="dropdown-toggle" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>V
+              <span class="d-flex align-items-center">
+                <a class="nav-link pe-0" href="#">
+                  Customers
+                </a>
+                <span class="dropdown-toggle" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi-chevron-down"></i>
+                </span>
               </span>
               <ul class="dropdown-menu" aria-labelledby="our-customers">
-                <li><a class="dropdown-item" href="#"><span>Customers Overview</span></a></li>
                 <li><a class="dropdown-item" href="#"><span>L'Oréal</span></a></li>
                 <li><a class="dropdown-item" href="#"><span>Lacoste</span></a></li>
                 <li><a class="dropdown-item" href="#"><span>Center Parcs</span></a></li>
@@ -69,13 +72,15 @@
               <a class="nav-link" href="#">Blog</a>
             </li>
           </ul>
-          <ul class="navbar-nav">
+          <ul class="navbar-nav navbar-right">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="language-switch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                EN
-                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>V
+                <span>
+                  EN
+                </span>
+                <i class="bi-chevron-down d-lg-none"></i>
               </a>
-              <ul class="dropdown-menu show" aria-labelledby="language-switch">
+              <ul class="dropdown-menu" aria-labelledby="language-switch">
                 <li><a class="dropdown-item" href="#"><span>Français</span></a></li>
                 <li><a class="dropdown-item" href="#"><span>Polski</span></a></li>
                 <li><a class="dropdown-item" href="#"><span>Deutsch</span></a></li>
@@ -83,10 +88,13 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-search" aria-hidden="true"></i>ICON<!-- NEED FONT AWESOME-->
-                <span class="sr-only">Search</span>
+                <span>
+                  <i class="bi-search p-0"></i>
+                  <span class="d-lg-none ps-1">Search</span>
+                </span>
+                <i class="bi-chevron-down d-lg-none"></i>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="profile">
+              <ul class="dropdown-menu has-search-form" aria-labelledby="profile">
                 <li>
                   <form class="d-flex search-form">
                     <input class="form-control" type="search" placeholder="Looking for..." aria-label="Search">
@@ -96,7 +104,7 @@
                 <li>
                   <a class="dropdown-item" href="#">
                     <span>
-                      ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                      <i class="bi-search pe-1"></i>
                       Search Item Sugguestion 1
                     </span>
                   </a>
@@ -104,7 +112,7 @@
                 <li>
                   <a class="dropdown-item" href="#">
                     <span>
-                      ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                      <i class="bi-search pe-1"></i>
                       Search Item Sugguestion 2
                     </span>
                   </a>
@@ -112,7 +120,7 @@
                 <li>
                   <a class="dropdown-item" href="#">
                     <span>
-                      ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                      <i class="bi-search pe-1"></i>
                       Search Item Sugguestion 3
                     </span>
                   </a>
@@ -121,9 +129,11 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-user" aria-hidden="true"></i>ICON<!-- NEED FONT AWESOME-->
-                <span class="sr-only">User Profile</span>
-                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>V
+                <span>
+                  <i class="bi-person-fill p-0"></i>
+                  <span class="d-lg-none ps-1">User Profile</span>
+                </span>
+                <i class="bi-chevron-down d-lg-none"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="profile">
                 <li><a class="dropdown-item" href="#"><span>Profile item 1</span></a></li>
@@ -135,6 +145,132 @@
         </div>
       </nav>
       <!----------------------- **END** navigation ---------------->
+
+      <!----------------- navigation open elements ------------------------------>
+      <nav class="navbar navbar-expand-lg"><!-- // NOTE: for background white navigation add class 'custom-navbar-bkgrd-color'-->
+        <a class="navbar-brand" href="#">
+          <img src="../images/dartagnan_logo_placeholder.png" alt="dartagnan logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#theme-email-nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="wrapper-lines">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="lines line-1 animate"></span>
+            <span class="lines line-2 animate"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse show" id="theme-email-nav">
+          <ul class="navbar-nav navbar-left">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Features</a>
+            </li>
+            <li class="nav-item dropdown">
+              <span class="d-flex align-items-center">
+                <a class="nav-link pe-0" href="#">
+                  Solutions
+                </a>
+                <span class="dropdown-toggle active"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi-chevron-down"></i>
+                </span>
+              </span>
+              <ul class="dropdown-menu show" aria-labelledby="solutions">
+                <li><a class="dropdown-item" href="#"><span>Marketing Teams</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>CRM Teams</a></span></li>
+                <li><a class="dropdown-item" href="#"><span>Design & Content Teams</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Brand & Communication Teams</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <span class="d-flex align-items-center">
+                <a class="nav-link pe-0" href="#">
+                  Customers
+                </a>
+                <span class="dropdown-toggle active" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi-chevron-down"></i>
+                </span>
+              </span>
+              <ul class="dropdown-menu show" aria-labelledby="our-customers">
+                <li><a class="dropdown-item" href="#"><span>L'Oréal</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Lacoste</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Center Parcs</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="language-switch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>
+                  EN
+                </span>
+                <i class="bi-chevron-down d-lg-none"></i>
+              </a>
+              <ul class="dropdown-menu show" aria-labelledby="language-switch">
+                <li><a class="dropdown-item" href="#"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Polski</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Deutsch</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>
+                  <i class="bi-search p-0"></i>
+                  <span class="d-lg-none ps-1">Search</span>
+                </span>
+                <i class="bi-chevron-down d-lg-none"></i>
+              </a>
+              <ul class="dropdown-menu has-search-form show" aria-labelledby="profile">
+                <li>
+                  <form class="d-flex search-form">
+                    <input class="form-control" type="search" placeholder="Looking for..." aria-label="Search">
+                    <button class="btn" type="submit"><span class="sr-only">Search</span></button>
+                  </form>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span>
+                      <i class="bi-search pe-1"></i>
+                      Search Item Sugguestion 1
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span>
+                      <i class="bi-search pe-1"></i>
+                      Search Item Sugguestion 2
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span>
+                      <i class="bi-search pe-1"></i>
+                      Search Item Sugguestion 3
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>
+                  <i class="bi-person-fill p-0"></i>
+                  <span class="d-lg-none ps-1">User Profile</span>
+                </span>
+                <i class="bi-chevron-down d-lg-none"></i>
+              </a>
+              <ul class="dropdown-menu show" aria-labelledby="profile">
+                <li><a class="dropdown-item" href="#"><span>Profile item 1</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Profile item 2</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Profile item 3</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!----------------------- **END** navigation open elements ---------------->
     </header>
 
     <header>
