@@ -32,15 +32,38 @@
           </span>
         </button>
         <div class="collapse navbar-collapse" id="theme-email-nav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav navbar-left">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Features</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Solutions</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">
+                Solutions
+              </a>
+              <span class="dropdown-toggle"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>V
+              </span>
+              <ul class="dropdown-menu show" aria-labelledby="solutions">
+                <li><a class="dropdown-item" href="#"><span>Solutions Overview</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Marketing Teams</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>CRM Teams</a></span></li>
+                <li><a class="dropdown-item" href="#"><span>Design & Content Teams</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Brand & Communication Teams</span></a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Customers</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">
+                Customers
+              </a>
+              <span class="dropdown-toggle" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>V
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="our-customers">
+                <li><a class="dropdown-item" href="#"><span>Customers Overview</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>L'Oréal</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Lacoste</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Center Parcs</span></a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
@@ -50,11 +73,12 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="language-switch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 EN
+                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>V
               </a>
-              <ul class="dropdown-menu" aria-labelledby="language-switch">
-                <li><a class="dropdown-item" href="#">Français</a></li>
-                <li><a class="dropdown-item" href="#">Polski</a></li>
-                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+              <ul class="dropdown-menu show" aria-labelledby="language-switch">
+                <li><a class="dropdown-item" href="#"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Polski</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Deutsch</span></a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -71,33 +95,40 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
-                    Search Item Sugguestion 1
+                    <span>
+                      ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                      Search Item Sugguestion 1
+                    </span>
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
-                    Search Item Sugguestion 2
+                    <span>
+                      ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                      Search Item Sugguestion 2
+                    </span>
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
-                    Search Item Sugguestion 3
+                    <span>
+                      ICON<i class="fa fa-search pe-2" aria-hidden="true"></i><!-- NEED FONT AWESOME-->
+                      Search Item Sugguestion 3
+                    </span>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-user" aria-hidden="true"></i>ICON<!-- NEED FONT AWESOME-->
+                <i class="fa-solid fa-user" aria-hidden="true"></i>ICON<!-- NEED FONT AWESOME-->
                 <span class="sr-only">User Profile</span>
+                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>V
               </a>
               <ul class="dropdown-menu" aria-labelledby="profile">
-                <li><a class="dropdown-item" href="#">Profile item 1</a></li>
-                <li><a class="dropdown-item" href="#">Profile item 2</a></li>
-                <li><a class="dropdown-item" href="#">Profile item 3</a></li>
+                <li><a class="dropdown-item" href="#"><span>Profile item 1</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Profile item 2</span></a></li>
+                <li><a class="dropdown-item" href="#"><span>Profile item 3</span></a></li>
               </ul>
             </li>
           </ul>
