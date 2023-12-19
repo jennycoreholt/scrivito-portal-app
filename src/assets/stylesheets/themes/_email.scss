@@ -63,4 +63,16 @@
     background-color: $email-blue;
     color: $brand-white;
   }
+  /* cards
+  ================================================== */
+  .card {
+    color: $email-blue;
+  }
+  .card.card-brand-bkgrd {
+    .card-body {
+      background-color: $email-blue;
+      color: $brand-white;
+    }
+  }
 }
+

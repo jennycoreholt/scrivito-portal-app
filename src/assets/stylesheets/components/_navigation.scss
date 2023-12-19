@@ -80,7 +80,9 @@ nav.navbar {
       padding-bottom: 0;
     }
     .navbar-nav {
-      align-items: center;
+      @include media-breakpoint-up(lg) {
+        align-items: center;
+      }
     }
     .navbar-nav.navbar-left {
       border-bottom: 2px solid $brand-white;
@@ -254,6 +256,7 @@ nav.navbar {
         border: 2px solid lighten($jr-middlegrey, 35%);
         border-left: 0;
         border-radius: 0 $border-radius-lg $border-radius-lg 0;
+        margin-bottom: 0;
         &:active,
         &:hover,
         &:focus {
