@@ -20,7 +20,7 @@
 
     <header>
 
-      <!----------------- navigation  ------------------------------>
+      <!----------------- navigation MVP  ------------------------------>
       <nav class="navbar navbar-expand-lg"><!-- // NOTE: for background white navigation add class 'custom-navbar-bkgrd-color'-->
         <a class="navbar-brand" href="#">
           <img src="../images/dartagnan_logo_placeholder.png" alt="dartagnan logo"/>
@@ -86,65 +86,15 @@
                 <li><a class="dropdown-item" href="#"><span>Deutsch</span></a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span>
-                  <i class="bi-search p-0"></i>
-                  <span class="d-lg-none ps-1">Search</span>
-                </span>
-                <i class="bi-chevron-down d-lg-none"></i>
+            <li class="nav-item">
+              <a class="nav-link">
+                <span class="btn btn-secondary" href="#">Request a demo</span>
               </a>
-              <ul class="dropdown-menu has-search-form" aria-labelledby="profile">
-                <li>
-                  <form class="d-flex search-form">
-                    <input class="form-control" type="search" placeholder="Looking for..." aria-label="Search">
-                    <button class="btn" type="submit"><span class="sr-only">Search</span></button>
-                  </form>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <span>
-                      <i class="bi-search pe-1"></i>
-                      Search Item Sugguestion 1
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <span>
-                      <i class="bi-search pe-1"></i>
-                      Search Item Sugguestion 2
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <span>
-                      <i class="bi-search pe-1"></i>
-                      Search Item Sugguestion 3
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span>
-                  <i class="bi-person-fill p-0"></i>
-                  <span class="d-lg-none ps-1">User Profile</span>
-                </span>
-                <i class="bi-chevron-down d-lg-none"></i>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="profile">
-                <li><a class="dropdown-item" href="#"><span>Profile item 1</span></a></li>
-                <li><a class="dropdown-item" href="#"><span>Profile item 2</span></a></li>
-                <li><a class="dropdown-item" href="#"><span>Profile item 3</span></a></li>
-              </ul>
             </li>
           </ul>
         </div>
       </nav>
-      <!----------------------- **END** navigation ---------------->
+      <!----------------------- **END** navigation MVP---------------->
 
       <!-------------------- simple header block widget -------------->
       <div class="page-header">
@@ -155,7 +105,7 @@
               <div class="col-md-8 col-xl-5">
                 <div class="text-center">
                   <h1>
-                    Dartagnan for you design and content teams
+                    Dartagnan for your design and content teams
                   </h1>
                   <p>
                     What if your designers and copywriters could forget about code
@@ -259,9 +209,16 @@
         <!-------------------- img src and box content  -------------->
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 order-md-last">
               <div class="column-y-padding h-100">
-                <div class="box box-white flexbox-vertical-center">
+                <div class="box box-no-pb-sm">
+                  <img class="img-fluid img-border-radius" alt="placeholder" src="../images/placeholder_product_img.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 order-md-first ">
+              <div class="column-y-padding h-100">
+                <div class="box box-white flexbox-vertical-center box-no-pb-sm">
                   <h2>
                      Designing E-Mails in Minutes
                   </h2>
@@ -276,42 +233,189 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="column-y-padding h-100">
-                <div class="box box-no-pb-sm">
-                  <img class="img-fluid img-border-radius" alt="placeholder" src="../images/placeholder_product_img.png"/>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
         <!-------------------- **END** img src and box content -------------->
 
+        <!---------------------  Button in column y padding ------------------->
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
               <div class="column-y-padding h-100">
+                <div class="box">
 
-                <!-- white space-->
-                <div class="sm-white-space"></div>
-                <!-- **END** white space -->
+                  <div class="text-center">
+                    <!--------------- button primary  ---------------->
+                    <div class="btn btn-primary custom-btn-lg">Find out more</div>
+                    <!------------ **END** button primary ------------>
+                  </div>
 
-                <div class="text-center">
-                  <!--------------- button primary  ---------------->
-                  <div class="btn btn-primary custom-btn-lg">Find out more</div>
-                  <!------------ **END** button primary ------------>
                 </div>
-
-                <!-- white space-->
-                <div class="lg-white-space"></div>
-                <!-- **END** white space -->
-
               </div>
             </div>
           </div>
         </div>
-
+        <!-----------------  **END** Button in column y padding  -------------->
       </section>
+
+      <!---------------------------- Feature Block ------------------------>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="column-y-padding h-100">
+                <div class="box box-cool-grey">
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                      <img src="../images/dummy_laptop_placeholder.png" alt="placeholder" class="img-fluid"/>
+                      <div class="text-center">
+                        <h1>
+                          <span class="light-weight-font">Why your teams will</span> <br>
+                          love Dartagnan
+                        </h1>
+                      </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------**END** Feature Block --------------------->
+
+      <!---------------------------- Check List example ------------------------>
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="column-y-padding h-100">
+                <div class="box-cool-grey">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="column-y-padding h-100">
+                        <div class="box box-no-pb-sm">
+                          <p>Thanks to its easy-to-use features, Dartagnan lets you design emails without ever touching a single line of code!</p>
+                          <a class="btn btn-primary custom-btn-lg" href="#">See our solutions</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="column-y-padding h-100">
+                        <div class="box">
+                          <div class="check-list">
+                            <ul>
+                              <li>
+                                Optimized business potential
+                              </li>
+                              <li>
+                                Stronger CRM performance
+                              </li>
+                              <li>
+                                More creative freedom
+                              </li>
+                              <li>
+                                Better brand management
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------**END** Check List Example --------------------->
+
+      <!-------------------- Two columns block widget -------------->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="column-y-padding h-100">
+                <div class="box box-bkgrd-img " style="background-image: url('../images/box_bkgrd_dummy_img.jpeg')">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="column-y-padding h-100">
+                <div class="box box-white">
+                  <h2>
+                      Email campaigns in over 30 countries
+                  </h2>
+                  <p>
+                    Thanks to its easy-to-use features, Dartagnan lets you design emails without ever touching a single line of code!
+                  </p>
+                  <div class="check-list">
+                    <ul>
+                      <li>
+                        I am a check list item
+                      </li>
+                      <li>
+                        I am a check list item
+                      </li>
+                      <li>
+                        I am a check list item
+                      </li>
+                      <li>
+                        I am a check list item
+                      </li>
+                    </ul>
+                  </div>
+
+                  <a class="btn btn-primary custom-btn-lg" href="#">See our solutions</a>
+
+                  <div class="sm-white-space"></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------------- **END** Two columns block widget ----------->
+
+      <!---------------------  Button in column y padding ------------------->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="column-y-padding h-100">
+                <div class="box ">
+
+                  <!-- white space-->
+                  <div class="sm-white-space"></div>
+                  <!-- **END** white space -->
+
+                  <div class="text-center">
+
+                    <p class="h1">
+                      Get in touch with us
+                    </p>
+
+                    <div class="sm-white-space"></div>
+
+                    <!--------------- button primary  ---------------->
+                    <div class="btn btn-primary custom-btn-lg">Let us Talk</div>
+                    <!------------ **END** button primary ------------>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----------------  **END** Button in column y padding  -------------->
+
     </main>
     <footer></footer>
   </body>

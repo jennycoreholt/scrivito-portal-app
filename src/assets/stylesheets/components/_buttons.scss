@@ -1,5 +1,9 @@
 /* Buttons
 ====================================================== */
+button,
+.btn {
+  margin-bottom: .5rem;
+}
 .btn.btn-primary,
 .btn.btn-secondary {
   border: 0;

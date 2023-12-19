@@ -1,6 +1,9 @@
 /* Theme email
 ================================================== */
 .theme-email {
+
+  /* header
+  ================================================== */
   header {
     background-color: $email-blue;
     form.search-form {
@@ -30,6 +33,9 @@
     color: $brand-white;
     margin-bottom: .3rem;
   }
+
+  /* buttons
+  ================================================== */
   .btn.btn-primary {
     background-color: $email-blue;
     color: $brand-white;
@@ -37,5 +43,24 @@
   .btn.btn-secondary {
     background-color: $brand-white;
     color: $font-color;
+  }
+
+  /* Lists
+  ================================================== */
+  .check-list {
+    ul {
+      li {
+        &:before {
+          color: $email-blue;
+        }
+      }
+    }
+  }
+
+  /* boxes
+  ================================================== */
+  .box-brand-color {
+    background-color: $email-blue;
+    color: $brand-white;
   }
 }

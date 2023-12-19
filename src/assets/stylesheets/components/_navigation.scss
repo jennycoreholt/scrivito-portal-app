@@ -20,7 +20,7 @@ nav.navbar {
   }
   @include media-breakpoint-up(xl){
     margin: auto;
-    max-width: 1400px;
+    max-width: 1500px;
   }
   .navbar-brand {
     img {
@@ -78,6 +78,9 @@ nav.navbar {
     @include media-breakpoint-up(lg){
       border-bottom: 0;
       padding-bottom: 0;
+    }
+    .navbar-nav {
+      align-items: center;
     }
     .navbar-nav.navbar-left {
       border-bottom: 2px solid $brand-white;
@@ -153,9 +156,6 @@ nav.navbar {
       align-items: center;
       display: flex;
       justify-content: space-between;
-      @include media-breakpoint-up(lg) {
-        padding-right: .5rem;
-      }
       i {
         padding: .35rem .6rem .35rem .45rem;
         transform: rotate(0deg);
