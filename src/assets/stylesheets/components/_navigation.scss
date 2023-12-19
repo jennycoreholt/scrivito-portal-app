@@ -22,6 +22,10 @@ nav.navbar {
     margin: auto;
     max-width: 1500px;
   }
+  button,
+  .btn {
+    margin-bottom: 0;
+  }
   .navbar-brand {
     img {
       height: 60px;
