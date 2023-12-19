@@ -4,6 +4,7 @@
 .box {
   height: 100%;
   padding: 4rem 2rem;
+  position: relative;
   @include media-breakpoint-up(sm) {
     padding: 4rem 3rem;
   }
@@ -11,6 +12,22 @@
   div[class*="col-"] {
     padding-left: .8rem;
     padding-right: .8rem;
+  }
+}
+
+.box-dark-overlay {
+  * {
+    color: $brand-white;
+    z-index: 10;
+  }
+  &:before {
+    background-color: rgba(0,0,0, .65);
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 

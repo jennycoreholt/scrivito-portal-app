@@ -44,6 +44,11 @@
     background-color: $brand-white;
     color: $font-color;
   }
+  .btn.btn-secondary-bordered {
+    background-color: transparent;
+    border-color: $brand-white;
+    color: $brand-white;
+  }
 
   /* lists
   ================================================== */
