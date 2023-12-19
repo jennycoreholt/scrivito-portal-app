@@ -45,7 +45,7 @@
     color: $font-color;
   }
 
-  /* Lists
+  /* lists
   ================================================== */
   .check-list {
     ul {
@@ -57,12 +57,19 @@
     }
   }
 
+  /* fpmt styles
+  ================================================== */
+  .brand-font-color {
+    color: $email-blue;
+  }
+
   /* boxes
   ================================================== */
   .box-brand-color {
     background-color: $email-blue;
     color: $brand-white;
   }
+
   /* cards
   ================================================== */
   .card {

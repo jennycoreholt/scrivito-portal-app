@@ -6,6 +6,16 @@
   border-radius: $border-radius-md;
 }
 
+.bkgrd-img-circle {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: $border-radius-lg;
+  height: 9rem;
+  margin: 0 auto 1rem;
+  width: 9rem;
+}
+
 /* box images
 ================================================== */
 .box-bkgrd-img {
