@@ -41,6 +41,7 @@ body {
 }
 
 .flexbox-vertical-center {
+  align-items: baseline;
   display: flex;
   flex-direction: column;
   justify-content: center;
