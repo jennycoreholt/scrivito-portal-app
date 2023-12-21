@@ -59,3 +59,12 @@
     }
   }
 }
+
+.sm-img-slider {
+  .sm-img-slider-bkgrd-img {
+    @include aspect-ratio(3,4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
