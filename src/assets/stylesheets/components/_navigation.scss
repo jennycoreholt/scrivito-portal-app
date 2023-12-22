@@ -189,6 +189,7 @@ nav.navbar {
     }
     .dropdown-menu {
       background-color: transparent;
+      border: 0;
       border-radius: 0;
       border-top: 1px solid $brand-white;
       color: $font-color;
@@ -200,14 +201,17 @@ nav.navbar {
         padding: 1.5rem .5rem;
       }
       li {
+        padding: .35rem 1.5rem;
         a {
           &:hover {
             background-color: transparent;
           }
         }
         a.dropdown-item {
+          border-bottom: 2px solid transparent;
           color: $brand-white;
-          padding: .35rem 1.5rem;
+          display: inline;
+          padding: 0;
           white-space: normal;
           @include media-breakpoint-up(lg) {
             color: $font-color;
@@ -223,9 +227,7 @@ nav.navbar {
         .dropdown-item:focus,
         .dropdown-item:hover {
           background: transparent;
-          span {
-            border-bottom: 2px solid $jr-orange;
-          }
+          border-bottom: 2px solid $jr-orange;
         }
       }
     }
@@ -246,7 +248,6 @@ nav.navbar {
     form.search-form {
       margin-bottom: 1.5rem;
       margin-top: .5rem;
-      padding: 0 1.5rem;
       .form-control {
         background-color: $email-soft-blue;
         border-radius: $border-radius-lg 0 0 $border-radius-lg;
