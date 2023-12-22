@@ -78,11 +78,7 @@ nav.navbar {
       transition: .3s cubic-bezier(0.1, 0.02, 0.2, 1);
     }
   }
-  .navbar-collapse.show {
-    border-bottom: 2px solid $brand-white;
-  }
   .navbar-collapse {
-    border-bottom: 2px solid transparent;
     justify-content: space-between;
     @include media-breakpoint-up(lg){
       border-bottom: 0;
@@ -95,8 +91,10 @@ nav.navbar {
       a {
         text-decoration: none;
       }
-      li:last-of-type {
-        padding-bottom: 1.5rem;
+      @include media-breakpoint-down(lg){
+        li:last-of-type {
+          padding-bottom: 1.5rem;
+        }
       }
     }
     .navbar-nav.navbar-left {
@@ -131,6 +129,9 @@ nav.navbar {
       }
     }
     .navbar-nav.navbar-right {
+      @include media-breakpoint-down(lg){
+        border-bottom: 2px solid $brand-white;
+      }
       .dropdown-menu {
         left: auto;
         right: 0;
