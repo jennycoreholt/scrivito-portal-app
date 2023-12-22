@@ -78,10 +78,12 @@ nav.navbar {
       transition: .3s cubic-bezier(0.1, 0.02, 0.2, 1);
     }
   }
-  .navbar-collapse {
+  .navbar-collapse.show {
     border-bottom: 2px solid $brand-white;
+  }
+  .navbar-collapse {
+    border-bottom: 2px solid transparent;
     justify-content: space-between;
-    padding-bottom: 1rem;
     @include media-breakpoint-up(lg){
       border-bottom: 0;
       padding-bottom: 0;
@@ -92,6 +94,9 @@ nav.navbar {
       }
       a {
         text-decoration: none;
+      }
+      li:last-of-type {
+        padding-bottom: 1.5rem;
       }
     }
     .navbar-nav.navbar-left {
@@ -139,9 +144,11 @@ nav.navbar {
     .nav-item {
       cursor: pointer;
     }
-    .nav-item.dropdown:hover {
-      .dropdown-menu {
-        display: block;
+    @include media-breakpoint-up(lg) {
+      .nav-item.dropdown:hover {
+        .dropdown-menu {
+          display: block;
+        }
       }
     }
     .nav-link,
