@@ -19,8 +19,9 @@
   <body class="theme-email">
 
     <header>
-       <!----------------- navigation MVP  ------------------------------>
-       <nav class="navbar navbar-expand-lg"><!-- // NOTE: for background white navigation add class 'custom-navbar-bkgrd-color'-->
+
+      <!----------------- navigation MVP  ------------------------------>
+      <nav class="navbar navbar-expand-lg"><!-- // NOTE: for background white navigation add class 'custom-navbar-bkgrd-color'-->
         <a class="navbar-brand" href="#">
           <img src="../images/dartagnan_logo_placeholder.png" alt="dartagnan logo"/>
         </a>
@@ -37,13 +38,11 @@
               <a class="nav-link" aria-current="page" href="#">Features</a>
             </li>
             <li class="nav-item dropdown">
-              <span class="d-flex align-items-center">
-                <a class="nav-link pe-0" href="#">
-                  Solutions
-                </a>
-                <span class="dropdown-toggle"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi-chevron-down"></i>
-                </span>
+              <a class="nav-link pe-0" href="#">
+                Solutions
+              </a>
+              <span class="dropdown-toggle"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-chevron-down"></i>
               </span>
               <ul class="dropdown-menu" aria-labelledby="solutions">
                 <li><a class="dropdown-item" href="#">Marketing Teams</a></li>
@@ -53,13 +52,11 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <span class="d-flex align-items-center">
-                <a class="nav-link pe-0" href="#">
-                  Customers
-                </a>
-                <span class="dropdown-toggle" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi-chevron-down"></i>
-                </span>
+              <a class="nav-link pe-0" href="#">
+                Customers
+              </a>
+              <span class="dropdown-toggle" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-chevron-down"></i>
               </span>
               <ul class="dropdown-menu" aria-labelledby="our-customers">
                 <li><a class="dropdown-item" href="#">L'Oréal</a></li>
@@ -113,14 +110,13 @@
               <a class="nav-link" aria-current="page" href="#">Features</a>
             </li>
             <li class="nav-item dropdown">
-              <span class="d-flex align-items-center">
-                <a class="nav-link pe-0" href="#">
-                  Solutions
-                </a>
-                <span class="dropdown-toggle"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi-chevron-down"></i>
-                </span>
+              <a class="nav-link pe-0" href="#">
+                Solutions
+              </a>
+              <span class="dropdown-toggle"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-chevron-down"></i>
               </span>
+
               <ul class="dropdown-menu" aria-labelledby="solutions">
                 <li><a class="dropdown-item" href="#">Marketing Teams</a></li>
                 <li><a class="dropdown-item" href="#">CRM Teams</a></li>
@@ -129,13 +125,11 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <span class="d-flex align-items-center">
-                <a class="nav-link pe-0" href="#">
-                  Customers
-                </a>
-                <span class="dropdown-toggle" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi-chevron-down"></i>
-                </span>
+              <a class="nav-link pe-0" href="#">
+                Customers
+              </a>
+              <span class="dropdown-toggle" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-chevron-down"></i>
               </span>
               <ul class="dropdown-menu" aria-labelledby="our-customers">
                 <li><a class="dropdown-item" href="#">L'Oréal</a></li>
@@ -233,13 +227,11 @@
               <a class="nav-link active" aria-current="page" href="#">Features</a>
             </li>
             <li class="nav-item dropdown">
-              <span class="d-flex align-items-center">
-                <a class="nav-link pe-0" href="#">
-                  Solutions
-                </a>
-                <span class="dropdown-toggle active"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi-chevron-down"></i>
-                </span>
+              <a class="nav-link pe-0" href="#">
+                Solutions
+              </a>
+              <span class="dropdown-toggle active"  id="solutions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-chevron-down"></i>
               </span>
               <ul class="dropdown-menu show" aria-labelledby="solutions">
                 <li><a class="dropdown-item" href="#">Marketing Teams</a></li>
@@ -249,13 +241,11 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <span class="d-flex align-items-center">
-                <a class="nav-link pe-0" href="#">
-                  Customers
-                </a>
-                <span class="dropdown-toggle active" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi-chevron-down"></i>
-                </span>
+              <a class="nav-link pe-0" href="#">
+                Customers
+              </a>
+              <span class="dropdown-toggle active" id="our-customer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-chevron-down"></i>
               </span>
               <ul class="dropdown-menu show" aria-labelledby="our-customers">
                 <li><a class="dropdown-item" href="#">L'Oréal</a></li>
@@ -289,7 +279,7 @@
                 </span>
                 <i class="bi-chevron-down d-lg-none"></i>
               </a>
-              <ul class="dropdown-menu has-search-form show" aria-labelledby="profile">
+              <ul class="dropdown-menu has-search-form show mb-4" aria-labelledby="profile">
                 <li>
                   <form class="d-flex search-form">
                     <input class="form-control" type="search" placeholder="Looking for..." aria-label="Search">
@@ -2820,6 +2810,11 @@
 
         // mobile menu animation //
         $(".navbar-toggler").on("click", function(e) {
+          $(this).toggleClass("active");
+        });
+
+        // dropdown menu animation //
+        $(".dropdown-toggle").on("click", function(e) {
           $(this).toggleClass("active");
         });
 

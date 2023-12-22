@@ -88,6 +88,13 @@ nav.navbar {
       @include media-breakpoint-up(lg) {
         align-items: center;
       }
+      .dropdown-menu {
+        margin-top: 0;
+      }
+      .dropdown-menu.show {
+        max-height: 200px;
+        opacity: 1;
+      }
       a {
         text-decoration: none;
       }
@@ -115,16 +122,28 @@ nav.navbar {
           margin-left: -11px;
         }
       }
+      .nav-item.dropdown {
+        padding-right: 3rem;
+        @include media-breakpoint-up(lg){
+          padding-right: 2.3rem;
+        }
+      }
       .nav-item.dropdown .nav-link {
         border-right: 1px solid $brand-white;
+        display: flex;
         @include media-breakpoint-up(lg){
           border-right: 0;
+          width: auto;
         }
       }
       .dropdown-toggle {
-        margin-left: .5rem;
+        position: absolute;
+        right: 0;
+        top: 0;
         @include media-breakpoint-up(lg){
           margin-left: 0;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
     }
@@ -149,6 +168,9 @@ nav.navbar {
       .nav-item.dropdown:hover {
         .dropdown-menu {
           display: block;
+        }
+        .bi-chevron-down {
+          transform: rotate(-180deg);
         }
       }
     }
@@ -176,11 +198,16 @@ nav.navbar {
       align-items: center;
       display: flex;
       justify-content: space-between;
+      padding-top: .7rem;
       i {
         padding: .35rem .6rem .35rem .45rem;
         transform: rotate(0deg);
         transition: .3s transform ease-in-out;
         display: inline-block;
+      }
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
       }
     }
     .dropdown-toggle::after {
